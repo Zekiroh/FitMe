@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - FitMe</title>
+    <link rel="stylesheet" href="signup.css">
+  </head>
+  <body>
+    <body>
+      <div class="login-container">
+        <form class="login-form" onsubmit="validateRegistrationForm(event)">
+          <h1 class="logo">FitMe</h1>
+          <p class="subheading">Create your account to manage and track member activity easily.</p>
+          <div class="input-group">
+            <input type="text" id="fullname" placeholder="Full Name" required>
+          </div>
+          <div class="input-group">
+            <input type="text" id="username-or-email" placeholder="Username or Email" required>
+          </div>
+          <div class="input-group">
+            <input type="password" id="password" placeholder="Password" required>
+            <span class="toggle-password" onclick="togglePassword('password')">
+              <img src="assets/icons/show-password.png" alt="Toggle Password" class="toggle-icon">
+            </span>
+          </div>
+          <div class="input-group">
+            <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+            <span class="toggle-password" onclick="togglePassword('confirm-password')">
+              <img src="assets/icons/show-password.png" alt="Toggle Password" class="toggle-icon">
+            </span>
+          </div>
+          <button type="submit" class="login-button">Sign Up</button>
+          <p class="signup-link">Already have an account? <a href="login.html">Login here</a>
+          </p>
+          <p id="error-message" class="error-message"></p>
+        </form>
+      </div>
+      <script src="signup.js"></script>
+    </body>
+</html>
