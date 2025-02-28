@@ -3,10 +3,10 @@ function togglePassword(fieldId) {
     const toggleIcon = passwordInput.nextElementSibling.querySelector('.toggle-icon');
     if (passwordInput.type === 'password') {
         passwordInput.type = 'text';
-        toggleIcon.src = 'assets/icons/hide-password.png';
+        toggleIcon.src = 'hide-password.png';
     } else {
         passwordInput.type = 'password';
-        toggleIcon.src = 'assets/icons/show-password.png';
+        toggleIcon.src = 'show-password.png';
     }
 }
 
